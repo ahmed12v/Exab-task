@@ -1,0 +1,44 @@
+.digital-stamp{
+    background-color: #F3F4F6;
+    height: 32px;
+    padding-right: 32px;
+}
+.flag-div{
+    width: 20px;
+    height: 14px;
+    background-color: #006923;
+}
+.p-defin{
+    color: #161616;
+    font-weight: 500;
+    font-size: 14px;
+}
+.p-link{
+    font-weight: 400;
+    color: #1B8354;
+    font-size: 14px;
+    cursor: pointer;
+}
+.fa-angle-down{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 992px) {
+  .digital-stamp {
+    flex-wrap: wrap;          
+    height: auto;            
+    padding: 8px 16px;        
+    row-gap: 4px;
+  }
+  .p-defin,
+  .p-link {
+    font-size: 14px;         
+    line-height: 20px;
+  }
+  .p-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
