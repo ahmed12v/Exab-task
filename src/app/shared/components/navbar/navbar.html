@@ -1,1 +1,34 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg custom-navbar" [class.fixed]="isFixed">
+  <div class="container-fluid custom-container">
+    <a class="navbar-brand">
+      <img src="/Logo (transparent-background) 1.png" alt="Logo" class="navbar-logo"/>
+    </a>
+
+    
+    <button
+  class="navbar-toggler"
+  type="button"
+  (click)="toggleNavbar()"
+  [class.open]="navbarOpen"
+  aria-label="Toggle navigation"
+>
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+    
+    <div class="collapse navbar-collapse" id="mainNavbar" [class.show]="navbarOpen">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()">الخدمات</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="closeNavbar()">تصفح المستودع</a></li>
+        <li class="nav-item"><a class="nav-link"(click)="closeNavbar()">تواصل معنا</a></li>
+      </ul>
+
+      <div class="navbar-icons d-flex align-items-center">
+        <a class="icon-link"><img src="/Header Action 1.png" alt="search Icon"></a>
+        <a class="icon-link"><img src="/Header Action 2.png" alt="translation Icon"></a>
+        <a class="icon-link"><img src="/Header Action 3.png" alt="user Icon"></a>
+      </div>
+    </div>
+  </div>
+</nav>

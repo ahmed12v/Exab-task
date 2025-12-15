@@ -1,0 +1,130 @@
+
+.custom-navbar {
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  height: 72px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  transition: top 0.3s ease-in-out;
+}
+.custom-navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #ffffff; 
+}
+.custom-container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.navbar-logo {
+  height: 60px;
+  width: 70px;
+}
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #161616;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: #006923;
+}
+.icon-link img{
+    width: 60px;
+    cursor: pointer;
+}
+.navbar-toggler{
+    outline: none;
+    border: none;
+}
+.navbar-toggler:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.navbar-toggler.open{
+    color: #006923 !important;
+    border: 2px solid #006923;
+}
+ 
+
+
+@media (max-width: 992px) {
+  .custom-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .custom-navbar {
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 8px 0;
+  }
+  .navbar-icons {
+    margin-top: 16px;
+    justify-content: flex-end;
+  }
+  .icon-link img {
+    width: 50px;
+  }
+  .collapse.navbar-collapse {
+    background-color: #ffffff; 
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .navbar-icons a {
+    margin-right: 12px;
+  }
+  /* mobaile Animation  */
+  @keyframes slideFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideFadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+
+  .collapse.navbar-collapse ul.navbar-nav li {
+    opacity: 0;
+  }
+  .collapse.navbar-collapse.show ul.navbar-nav li {
+    animation: slideFadeIn 0.4s forwards;
+  }
+  .collapse.navbar-collapse.show ul.navbar-nav li:nth-child(1) { animation-delay: 0.05s; }
+  .collapse.navbar-collapse.show ul.navbar-nav li:nth-child(2) { animation-delay: 0.1s; }
+  .collapse.navbar-collapse.show ul.navbar-nav li:nth-child(3) { animation-delay: 0.15s; }
+  .collapse.navbar-collapse.show ul.navbar-nav li:nth-child(4) { animation-delay: 0.2s; }
+  .collapse.navbar-collapse:not(.show) ul.navbar-nav li {
+    animation: slideFadeOut 0.3s forwards;
+  }
+  .collapse.navbar-collapse:not(.show) ul.navbar-nav li:nth-child(1) { animation-delay: 0.15s; }
+  .collapse.navbar-collapse:not(.show) ul.navbar-nav li:nth-child(2) { animation-delay: 0.1s; }
+  .collapse.navbar-collapse:not(.show) ul.navbar-nav li:nth-child(3) { animation-delay: 0.05s; }
+  .collapse.navbar-collapse:not(.show) ul.navbar-nav li:nth-child(4) { animation-delay: 0s; }
+
+}
+
