@@ -7,8 +7,12 @@
   padding: 0;
 }
 :root {
+   --waite-color:rgba(255, 255, 255, 1) ;
+    --main-green-color : #006923;
+    --gray-color:#F3F4F6;
     --font-family-base: 'IBM Plex Sans Arabic', sans-serif;
 }
+
 body{
     font-family: var(--font-family-base);
 }

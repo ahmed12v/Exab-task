@@ -1,0 +1,93 @@
+.libery-sec{
+padding: 32px 60px;
+background-color: rgb(255, 255, 255);
+}
+.title{
+font-size: 37px;
+ font-weight: 700;
+ color: rgba(22, 22, 22, 1);
+}
+.all-btn{
+    padding: 4px 16px;
+    background-color: #F9FAFB;
+    border: 1px solid rgba(13, 13, 13, 0.2);
+    border-radius: 4px;
+    font-weight: 700;
+    transition: all .5s;
+}
+.all-btn:hover{
+     padding: 4px 16px;
+    background-color: #1B8354;
+    color: #F9FAFB;
+    border: 1px solid #1B8354;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.card-items{
+  padding: 16px;
+  border-radius: 16px;
+  background: #FFFFFF;
+  border: 1px solid rgba(13, 13, 13, 0.2);
+}
+.card-items img{
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+}
+.card-title{
+    color: #1F2A37;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 17px;
+}
+.text-addtion{
+    color: #1F2A37;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+.start-btn{
+    padding: 4px 16px;
+    background-color: #1B8354;
+    color: #F9FAFB;
+    border: 1px solid #1B8354;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: all .5s;
+}
+.start-btn:hover{
+    padding: 4px 16px;
+    background-color: #F9FAFB;
+    border: 1px solid rgba(13, 13, 13, 0.2);
+    border-radius: 4px;
+    font-weight: 700;
+    color: #000000;
+}
+@media (max-width: 992px) {
+  .libery-sec{
+    padding: 20px;
+  }
+  .title{
+    font-size: 26px;
+    line-height: 1.3;
+  }
+  .card-items{
+    padding: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .card-items .card-title{
+    font-size: 16px;
+    margin-top: 8px;
+  } 
+  .text-addtion{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .details-btn,
+  .start-btn{
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+
+}
