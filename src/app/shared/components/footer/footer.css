@@ -46,3 +46,6 @@ hr{
     font-family: 400;
     color: #dddada;
 }
+.footer-card-content a{
+    cursor: pointer;
+}

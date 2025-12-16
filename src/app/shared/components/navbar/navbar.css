@@ -127,4 +127,7 @@
   .collapse.navbar-collapse:not(.show) ul.navbar-nav li:nth-child(4) { animation-delay: 0s; }
 
 }
+.active-now{
+  color: #006923 !important;
+}
 
