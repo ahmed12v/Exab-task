@@ -73,6 +73,15 @@ input::placeholder{
   border-radius:2px ;
   border: none;
   font-weight: 400;
+  color: #000000;
+  transition: all .5s;
+}
+.btn-serch:hover{
+  background-color: #1B8354;
+  border-radius:2px ;
+  border: none;
+  font-weight: 400;
+  color: #F9FAFB;
 }
 
 /*   services section  */
@@ -122,6 +131,7 @@ font-size: 37px;
     border: 1px solid rgba(13, 13, 13, 0.2);
     border-radius: 4px;
     font-weight: 700;
+    color: #000000;
     transition: all .5s;
 }
 .details-btn:hover{
@@ -184,6 +194,11 @@ font-size: 37px;
     padding: 6px 14px;
   }
 
+}
+@media (max-width:624px) {
+  .container-fluid{
+    justify-content: center;
+  }
 }
 
 

@@ -13,6 +13,7 @@ font-size: 37px;
     border: 1px solid rgba(13, 13, 13, 0.2);
     border-radius: 4px;
     font-weight: 700;
+    color: #161616;
     transition: all .5s;
 }
 .all-btn:hover{
