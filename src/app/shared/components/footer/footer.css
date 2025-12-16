@@ -48,4 +48,16 @@ hr{
 }
 .footer-card-content a{
     cursor: pointer;
+    text-decoration: none;
+}
+@media (max-width:992px) {
+    .feedbakc{
+        padding: 10px 20px;
+    }
+    footer{
+        padding: 32px 20px;
+    }
+    .footer-card-content {
+      margin-bottom: 20px;
+    }
 }
