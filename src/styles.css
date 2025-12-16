@@ -16,3 +16,25 @@
 body{
     font-family: var(--font-family-base);
 }
+
+/* directive */
+[appScrollReveal] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .8s ease-in-out;
+}
+
+[appScrollReveal].show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page-btn {
+  border: none;
+  background-color: white;
+  color: var(--main-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
